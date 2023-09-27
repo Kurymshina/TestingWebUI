@@ -1,12 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.netology.webselenium.AppOrderNegativeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-09-27T06:07:46" hostname="DESKTOP-MBK3APQ" time="3.654">
+<testsuite name="ru.netology.webselenium.AppOrderNegativeTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-09-27T07:18:54" hostname="DESKTOP-MBK3APQ" time="19.962">
   <properties/>
-  <testcase name="should()" classname="ru.netology.webselenium.AppOrderNegativeTest" time="3.654"/>
+  <testcase name="shouldBeFailedIfIncorrectNameInputUsingSpaces()" classname="ru.netology.webselenium.AppOrderNegativeTest" time="3.563"/>
+  <testcase name="shouldBeFailedIfUncheckCheckbox()" classname="ru.netology.webselenium.AppOrderNegativeTest" time="2.369"/>
+  <testcase name="shouldBeFailedIfIncorrectNameInputUsingSymbols()" classname="ru.netology.webselenium.AppOrderNegativeTest" time="2.419"/>
+  <testcase name="shouldBeFailedIfEmptyPhone()" classname="ru.netology.webselenium.AppOrderNegativeTest" time="2.263"/>
+  <testcase name="shouldBeFailedIfIncorrectPhoneIfUsingLatin()" classname="ru.netology.webselenium.AppOrderNegativeTest" time="2.319"/>
+  <testcase name="shouldBeFailedIfIncorrectPhoneIfUsingSymbols()" classname="ru.netology.webselenium.AppOrderNegativeTest" time="2.415"/>
+  <testcase name="shouldBeFailedIfEmptyNameInput()" classname="ru.netology.webselenium.AppOrderNegativeTest" time="2.253"/>
+  <testcase name="shouldBeFailedIfIncorrectNameInputUsingLatin()" classname="ru.netology.webselenium.AppOrderNegativeTest" time="2.356"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[SLF4J: No SLF4J providers were found.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
-сент. 27, 2023 10:07:48 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+сент. 27, 2023 11:18:56 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
+сент. 27, 2023 11:18:59 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
+сент. 27, 2023 11:19:01 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
+сент. 27, 2023 11:19:04 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
+сент. 27, 2023 11:19:06 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
+сент. 27, 2023 11:19:08 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
+сент. 27, 2023 11:19:11 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
+сент. 27, 2023 11:19:13 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
 ]]></system-err>
 </testsuite>
