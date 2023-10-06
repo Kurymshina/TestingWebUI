@@ -46,7 +46,7 @@ public class AppOrderNegativeTest {
         driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+79098565040");
         driver.findElement(By.cssSelector("[data-test-id='agreement']")).click();
         driver.findElement(By.cssSelector("button.button")).click();
-        var actualText = driver.findElement(By.xpath("//*[@id=\"root\"]/div/form/div[1]/span/span/span[3]")).getText().trim();
+        var actualText = driver.findElement(By.cssSelector("[data-test-id=order-success]")).getText().trim();
         assertEquals("Имя и Фамилия указаные неверно. Допустимы только русские буквы, пробелы и дефисы.", actualText);
     }
 
@@ -56,7 +56,7 @@ public class AppOrderNegativeTest {
         driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+79098565040");
         driver.findElement(By.cssSelector("[data-test-id='agreement']")).click();
         driver.findElement(By.cssSelector("button.button")).click();
-        var actualText = driver.findElement(By.xpath("//*[@id=\"root\"]/div/form/div[1]/span/span/span[3]")).getText().trim();
+        var actualText = driver.findElement(By.cssSelector("[data-test-id=order-success]")).getText().trim();
         assertEquals("Имя и Фамилия указаные неверно. Допустимы только русские буквы, пробелы и дефисы.", actualText);
     }
 
@@ -66,7 +66,7 @@ public class AppOrderNegativeTest {
         driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+79098565040");
         driver.findElement(By.cssSelector("[data-test-id='agreement']")).click();
         driver.findElement(By.cssSelector("button.button")).click();
-        var actualText = driver.findElement(By.xpath("//*[@id=\"root\"]/div/form/div[1]/span/span/span[3]")).getText().trim();
+        var actualText = driver.findElement(By.cssSelector("[data-test-id=order-success]")).getText().trim();
         assertEquals("Поле обязательно для заполнения", actualText);
     }
 
@@ -75,7 +75,7 @@ public class AppOrderNegativeTest {
         driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+79098565040");
         driver.findElement(By.cssSelector("[data-test-id='agreement']")).click();
         driver.findElement(By.cssSelector("button.button")).click();
-        var actualText = driver.findElement(By.xpath("//*[@id=\"root\"]/div/form/div[1]/span/span/span[3]")).getText().trim();
+        var actualText = driver.findElement(By.cssSelector("[data-test-id=order-success]")).getText().trim();
         assertEquals("Поле обязательно для заполнения", actualText);
     }
 
@@ -85,7 +85,7 @@ public class AppOrderNegativeTest {
         driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("dsdsf");
         driver.findElement(By.cssSelector("[data-test-id='agreement']")).click();
         driver.findElement(By.cssSelector("button.button")).click();
-        var actualText = driver.findElement(By.cssSelector("#root > div > form > div:nth-child(2) > span > span > span.input__sub")).getText().trim();
+        var actualText = driver.findElement(By.cssSelector("[data-test-id=order-success]")).getText().trim();
         assertEquals("Телефон указан неверно. Должно быть 11 цифр, например, +79012345678.", actualText);
     }
 
@@ -95,7 +95,7 @@ public class AppOrderNegativeTest {
         driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+7(999)1233434");
         driver.findElement(By.cssSelector("[data-test-id='agreement']")).click();
         driver.findElement(By.cssSelector("button.button")).click();
-        var actualText = driver.findElement(By.cssSelector("#root > div > form > div:nth-child(2) > span > span > span.input__sub")).getText().trim();
+        var actualText = driver.findElement(By.cssSelector("[data-test-id=order-success]")).getText().trim();
         assertEquals("Телефон указан неверно. Должно быть 11 цифр, например, +79012345678.", actualText);
     }
 
@@ -104,7 +104,7 @@ public class AppOrderNegativeTest {
         driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("Петров Иван");
         driver.findElement(By.cssSelector("[data-test-id='agreement']")).click();
         driver.findElement(By.cssSelector("button.button")).click();
-        var actualText = driver.findElement(By.cssSelector("#root > div > form > div:nth-child(2) > span > span > span.input__sub")).getText().trim();
+        var actualText = driver.findElement(By.cssSelector("[data-test-id=order-success]")).getText().trim();
         assertEquals("Поле обязательно для заполнения", actualText);
     }
 
